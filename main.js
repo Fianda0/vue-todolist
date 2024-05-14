@@ -33,8 +33,9 @@ createApp({
       else {
         alert('la lista contine già quel elemento')
       }
-
-
+    },
+    fatto(i) {
+      delete this.lista[i]
     }
   }
 }).mount('#app')

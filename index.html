@@ -18,12 +18,18 @@
 
     <div id="app">
 
-
+        <!-- Input per aggiungre elemento alla lista -->
         <input v-model="addToDo" placeholder="Inserire cosa fare" />
+
+        <!-- Bottone collegato all'input con evento click -->
         <br><button id="aggiungi" @click="aggiungi">Aggiungi alla lista</button>
+
         <!-- Creo lista per ogni elemento dell'array -->
         <ul>
-            <li v-for="element in lista">{{element}}</li>
+            <li v-for="element,i in lista">
+                <span id="check"><i class="fa-solid fa-check" @click="fatto(i)"></i></span>
+                {{element}}
+            </li>
         </ul>
     </div>
 

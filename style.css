@@ -11,6 +11,20 @@ body {
 }
 
 button,
-input {
+input,
+li {
+    padding: 0.5rem;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+li>span {
+    border: 1px solid white;
     padding: 0.5rem;
 }
