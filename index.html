@@ -18,6 +18,9 @@
 
     <div id="app">
 
+
+        <input v-model="addToDo" placeholder="Inserire cosa fare" />
+        <br><button id="aggiungi" @click="aggiungi">Aggiungi alla lista</button>
         <!-- Creo lista per ogni elemento dell'array -->
         <ul>
             <li v-for="element in lista">{{element}}</li>

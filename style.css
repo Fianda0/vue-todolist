@@ -9,3 +9,8 @@ body {
     background-color: #222;
     font-family: sans-serif;
 }
+
+button,
+input {
+    padding: 0.5rem;
+}
