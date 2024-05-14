@@ -35,7 +35,8 @@ createApp({
       }
     },
     fatto(i) {
-      delete this.lista[i]
+      this.lista.splice(i, 1)
+      console.log(this.lista)
     }
   }
 }).mount('#app')
