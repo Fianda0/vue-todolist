@@ -17,7 +17,11 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <div id="app">
-        {{ message }}
+
+        <!-- Creo lista per ogni elemento dell'array -->
+        <ul>
+            <li v-for="element in lista">{{element}}</li>
+        </ul>
     </div>
 
     <script src="./main.js"></script>
